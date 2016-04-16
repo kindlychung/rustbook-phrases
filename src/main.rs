@@ -1,12 +1,11 @@
 extern crate phrases;
 
-use phrases::english;
-use phrases::japanese;
+use phrases::{english, japanese};
 
 fn main() {
-    println!("Hello in English: {}", english::greetings::hello());
-    println!("Goodbye in English: {}", english::farewells::goodbye());
+    println!("Hello in English: {}", english::hello());
+    println!("Goodbye in English: {}", english::goodbye());
 
-    println!("Hello in Japanese: {}", japanese::greetings::hello());
-    println!("Goodbye in Japanese: {}", japanese::farewells::goodbye());
+    println!("Hello in Japanese: {}", japanese::hello());
+    println!("Goodbye in Japanese: {}", japanese::goodbye());
 }
